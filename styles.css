@@ -1,0 +1,152 @@
+html,
+button {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  background-image: url(./images/background-gradient.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.h1-wrap {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 8em;
+  font-weight: 600;
+  text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.11);
+}
+
+header .links {
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-size: 3em;
+  font-weight: 600;
+}
+
+/* MAIN */
+
+main {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+}
+
+.left-main {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.left-border-wrap {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-boarder {
+  transform: translate(25px, -80px);
+  width: 50%;
+  height: 50%;
+  border-right: 5px solid white;
+}
+
+.left-wrap {
+  height: 85%;
+  width: 75%;
+}
+
+.main-title {
+  font-size: 7em;
+  font-weight: 600;
+  margin-block-end: 0;
+  margin-bottom: 0.2em;
+}
+
+.sub-title {
+  font-size: 4em;
+  font-weight: 400;
+  margin-block-start: 0;
+}
+
+.sub-text {
+  font-size: 2.8em;
+  font-weight: 400;
+}
+
+aside .right-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image {
+  height: 100%;
+  transform: translateX(10em);
+}
+
+.buttons {
+  width: fit-content;
+  margin-top: 50px;
+}
+.buttons button:hover {
+  cursor: pointer;
+}
+
+.contact-button {
+  color: #6250a6;
+  background-color: #59fad2;
+  border-radius: 100px;
+
+  border: none;
+  font-size: 3em;
+  font-weight: 600;
+
+  padding: 8px;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+  margin-right: 50px;
+}
+
+.about-button {
+  border-radius: 100px;
+  border: solid 3px white;
+  background: none;
+
+  font-size: 3em;
+  font-weight: 600;
+
+  padding: 8px;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+}
