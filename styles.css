@@ -295,7 +295,7 @@ aside .right-main {
     font-size: 6em;
   }
   .main-title {
-    font-size: 4em;
+    font-size: 3.5em;
   }
   .sub-title {
     font-size: 2em;
@@ -312,6 +312,13 @@ aside .right-main {
     align-items: center;
     justify-content: center;
   }
+  .about-button {
+    font-size: 1.5em;
+    border: solid white 1px;
+  }
+  .contact-button {
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (max-height: 800px) {
@@ -324,5 +331,8 @@ aside .right-main {
   }
   .contact-button {
     font-size: 1.5em;
+  }
+  .main-image {
+    transform: translateY(30px);
   }
 }
