@@ -233,7 +233,7 @@ aside .right-main {
   }
 
   .h1-wrap {
-    width: 85%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,6 +243,7 @@ aside .right-main {
     width: 100%;
     text-align: center;
   }
+
   h2 {
     text-align: center;
     border-bottom: solid white 2px;
