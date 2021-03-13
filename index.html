@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="hamburger.css" />
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <link rel="stylesheet" href="./stylesheets/hamburger.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
@@ -22,11 +22,11 @@
           <div>
             <div>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutme.html">About Me</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/blogs.html">Blogs</a></li>
+                <li><a href="/contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -34,13 +34,13 @@
       </div>
 
       <div class="h1-wrap">
-        <h1>My Web-Project</h1>
+        <h1><a href="index.html">My Web-Project</a></h1>
       </div>
       <nav class="links">
-        <p class="about-me">About me</p>
-        <p class="portfolio">Portfolio</p>
-        <p class="blogs">Blogs</p>
-        <p class="contact">Contact</p>
+        <a href="aboutme.html" class="about-me">About me</a>
+        <a href="projects.html" class="portfolio">Portfolio</a>
+        <a href="blogs.html" class="blogs">Blogs</a>
+        <a href="contact.html" class="contact">Contact</a>
       </nav>
     </header>
     <main>
@@ -58,8 +58,12 @@
             Please feel free to browse my work!
           </p>
           <div class="buttons">
-            <button class="contact-button">Contact</button>
-            <button class="about-button">About me!</button>
+            <a href="./contact.html"
+              ><button class="contact-button">Contact</button></a
+            >
+            <a href="aboutme.html">
+              <button class="about-button">About me!</button></a
+            >
           </div>
         </div>
       </section>
