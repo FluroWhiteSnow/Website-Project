@@ -12,9 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
+    <script
+      integrity="sha512-xV6+07RSP/pNcdBOxb6h5ef+ISsrEq2xs5qh3iUOsouSJEyUp3BhD3lRli1Ped2YMok9/Th9pzWFdwnolijrfw=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
+    <!-- HEADER AND HAMBURGER COMPONENT -->
+    <header id="header">
       <div class="menu-wrap">
         <input type="checkbox" class="toggler" />
         <div class="hamburger"><div></div></div>
@@ -22,11 +27,11 @@
           <div>
             <div>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutme.html">About Me</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/blogs.html">Blogs</a></li>
+                <li><a href="/contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -34,16 +39,17 @@
       </div>
 
       <div class="h1-wrap">
-        <h1>My Web-Project</h1>
+        <h1><a href="index.html">My Web-Project</a></h1>
       </div>
       <nav class="links">
-        <p class="about-me">About me</p>
-        <p class="portfolio">Portfolio</p>
-        <p class="blogs">Blogs</p>
-        <p class="contact">Contact</p>
+        <a href="aboutme.html" class="about-me">About me</a>
+        <a href="projects.html" class="portfolio">Portfolio</a>
+        <a href="blogs.html" class="blogs">Blogs</a>
+        <a href="contact.html" class="contact">Contact</a>
       </nav>
     </header>
     <main>
+      <!-- 5 BLOG POSTS -->
       <div class="main-wrap">
         <h2>My Blogs!</h2>
         <div class="blogs-wrap">
@@ -53,8 +59,10 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
               pariatur commodi minus et autem obcaecati accusantium repellat
               vitae ea, error neque enim quidem esse nisi voluptatum quas eius
-              mollitia ut!
+              mollitia ut!Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Earum pariatur commodi minus et autem
             </p>
+            <!-- IMAGE COMPONENTS -->
             <img src="./images/1.jpg" alt="Blog image" />
             <br />
             <p class="text-block-2">
@@ -65,14 +73,16 @@
               Malorum for use in a type specimen book. It usually begins with:
             </p>
           </div>
-          <div class="blog blog-1">
+          <div class="blog blog-2">
             <h3>Blog 2</h3>
-            <p class="text-block-1">
+            <p class="text-block-1 reverse">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
               pariatur commodi minus et autem obcaecati accusantium repellat
               vitae ea, error neque enim quidem esse nisi voluptatum quas eius
-              mollitia ut!
+              mollitia ut!Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Earum pariatur commodi minus et autem
             </p>
+            <!-- IMAGE COMPONENTS -->
             <img src="./images/2.jpg" alt="Blog image" />
             <p class="text-block-2">
               Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -88,8 +98,10 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
               pariatur commodi minus et autem obcaecati accusantium repellat
               vitae ea, error neque enim quidem esse nisi voluptatum quas eius
-              mollitia ut!
+              mollitia ut!Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Earum pariatur commodi minus et autem
             </p>
+            <!-- IMAGE COMPONENTS -->
             <img src="./images/3.jpg" alt="Blog image" />
             <p class="text-block-2">
               Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -100,14 +112,16 @@
             </p>
           </div>
 
-          <div class="blog blog-1">
+          <div class="blog blog-2">
             <h3>Blog 4</h3>
             <p class="text-block-1">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
               pariatur commodi minus et autem obcaecati accusantium repellat
               vitae ea, error neque enim quidem esse nisi voluptatum quas eius
-              mollitia ut!
+              mollitia ut!Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Earum pariatur commodi minus et autem
             </p>
+            <!-- IMAGE COMPONENTS -->
             <img src="./images/4.jpg" alt="Blog image" />
             <p class="text-block-2">
               Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -123,8 +137,10 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
               pariatur commodi minus et autem obcaecati accusantium repellat
               vitae ea, error neque enim quidem esse nisi voluptatum quas eius
-              mollitia ut!
+              mollitia ut!Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Earum pariatur commodi minus et autem
             </p>
+            <!-- IMAGE COMPONENTS -->
             <img src="./images/5.jpg" alt="Blog image" />
             <p class="text-block-2">
               Lorem ipsum, or lipsum as it is sometimes known, is dummy text
@@ -136,12 +152,12 @@
           </div>
         </div>
       </div>
-      <footer>
-        <p class="home">Home</p>
-        <p class="about-me">About me</p>
-        <p class="portfolio">Portfolio</p>
-        <p class="blogs">Blogs</p>
-        <p class="contact">Contact</p>
+      <!-- FOOTER COMPONENT -->
+      <footer class="footer-links">
+        <a href="aboutme.html" class="footer-link">About me</a>
+        <a href="projects.html" class="footer-link">Portfolio</a>
+        <a href="#header" class="footer-link">Blogs</a>
+        <a href="contact.html" class="footer-link">Contact</a>
       </footer>
     </main>
   </body>

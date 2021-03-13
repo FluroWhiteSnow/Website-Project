@@ -5,10 +5,6 @@ button {
   color: white;
 }
 
-button {
-  outline: none;
-}
-
 body {
   height: 100vh;
   width: 100vw;
@@ -115,6 +111,7 @@ input,
 textarea {
   color: #f7efef;
 }
+
 textarea:focus,
 input:focus {
   outline: 0;
@@ -123,15 +120,25 @@ input:focus {
 ::placeholder {
   color: white;
 }
+
+/* IMAGE COMPONENT */
+
 .socials {
   margin-top: 20px;
   width: 40%;
   display: flex;
   justify-content: space-between;
 }
+
 .socials img {
   height: 40px;
   margin-bottom: 20px;
+}
+
+/* SUBMIT BUTTON COMPONENT */
+
+button {
+  outline: none;
 }
 
 .submit-button {
@@ -157,6 +164,8 @@ input:focus {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 500px) {
   .h1-wrap {
     width: 100vw;
@@ -165,19 +174,24 @@ input:focus {
   .h1-wrap h1 {
     font-size: 3.5em;
   }
+
   .inputs {
     border-radius: 5px;
   }
+
   .contact-form h2 {
     font-size: 4em;
     margin-top: 15px;
   }
+
   .contact-form p {
     font-size: 1.7em;
   }
+
   .contact-form label {
     font-size: 2em;
   }
+
   .contact-form input {
     width: 300px;
     padding: 5px;
@@ -194,13 +208,20 @@ input:focus {
     height: 150px;
     padding: 5px;
   }
+
+  /* BUTTON COMPONENT */
+
   #button {
     width: 120px;
     font-size: 2.5em;
   }
+
+  /* --------------- */
+
   .socials {
     width: 30%;
   }
+
   .socials img:hover {
     cursor: pointer;
   }
@@ -216,6 +237,7 @@ input:focus {
     font-size: 5.5em;
     margin-top: 0;
   }
+
   .main-wrapper {
     height: 80%;
     justify-content: space-evenly;
@@ -225,12 +247,15 @@ input:focus {
     font-size: 6em;
     margin-top: 0;
   }
+
   .contact-form p {
     font-size: 2.3em;
   }
+
   .contact-form label {
     font-size: 3em;
   }
+
   .contact-form input {
     width: 400px;
     height: fit-content;
@@ -243,20 +268,27 @@ input:focus {
     height: 225px;
     font-size: 2em;
   }
+
+  /* BUTTON COMPONENT */
+
   #button {
     width: 150px;
     font-size: 3em;
   }
+
   .socials {
     width: 30%;
     margin-top: 30px;
   }
+
   .socials img {
     height: 55px;
   }
 }
 
 @media screen and (min-width: 1235px) {
+  /* --------- HEADER COMPONENT OF SITE ---------- */
+
   .links {
     display: flex;
   }

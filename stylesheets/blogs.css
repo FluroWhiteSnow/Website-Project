@@ -1,3 +1,5 @@
+@import "/stylesheets/media-queries/projects-media.css";
+
 html,
 button {
   font-size: 62.5%;
@@ -32,12 +34,29 @@ body {
   margin-top: 10px;
   height: 10vh;
 }
+
+/* SOME HEADER COMPONENTS */
+
+.h1-wrap > h1 > a {
+  text-decoration: none;
+  color: white;
+}
+
 .h1-wrap h1 {
   text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.11);
 }
 
 .links {
   display: none;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 main {
@@ -68,6 +87,7 @@ main {
   height: 100%;
   width: 100%;
 }
+
 .blog h3 {
   font-size: 1.7em;
   font-weight: 500;
@@ -78,12 +98,17 @@ main {
   width: 100%;
   margin-bottom: 15px;
 }
+
+/* IMAGE COMPONENTS */
+
 .blog img {
   height: 50%;
   width: 50%;
   margin: 10px 0 10px 0;
   border-radius: 5px;
 }
+
+/* FOOTER COMPONENT*/
 
 footer {
   height: 10vh;
@@ -93,8 +118,15 @@ footer {
   align-items: center;
 }
 
-footer p {
+.footer-links a {
+  color: white;
+  text-decoration: none;
   font-weight: 500;
+}
+
+.footer-links a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 500px) {
@@ -109,12 +141,15 @@ footer p {
   .main-wrap h2 {
     font-size: 3.5em;
   }
+
   .blog {
     margin-bottom: 100px;
   }
+
   .blog h3 {
     font-size: 3em;
   }
+
   .blog p {
     font-size: 1.5em;
   }
@@ -136,9 +171,11 @@ footer p {
   .blog h3 {
     width: 100%;
   }
+
   .blog p {
     font-size: 1.7em;
   }
+
   .text-block-1 {
     order: 1;
     margin-left: 15px;
@@ -154,6 +191,10 @@ footer p {
     width: 50%;
     height: 80%;
   }
+
+  footer {
+    font-size: 1.7em;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -166,9 +207,11 @@ footer p {
     font-size: 5.5em;
     margin-top: 0;
   }
+
   .main-wrap h2 {
     font-size: 5em;
   }
+
   .blog-wrap {
     display: flex;
     justify-content: center;
@@ -183,12 +226,19 @@ footer p {
   .blog h3 {
     font-size: 4em;
   }
+
   .blog p {
+    font-size: 1.8em;
+  }
+
+  footer {
     font-size: 2em;
   }
 }
 
 @media screen and (min-width: 1235px) {
+  /* HEADER COMPONENTS */
+
   .links {
     display: flex;
   }
@@ -235,19 +285,29 @@ footer p {
     cursor: pointer;
     text-decoration: underline;
   }
+
   .main-wrap h2 {
     font-size: 6em;
   }
+
   .blog h3 {
     font-size: 5em;
   }
+
   .blog p {
     font-size: 2.3em;
   }
+
   .blog img {
-    height: 80%;
+    height: 50%;
+    width: 30%;
   }
+
   .blog {
     height: fit-content;
+  }
+
+  .text-block-1 {
+    width: 60%;
   }
 }

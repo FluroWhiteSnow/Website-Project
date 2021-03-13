@@ -32,9 +32,11 @@ body {
   margin-top: 10px;
   height: 10vh;
 }
+
 .h1-wrap h1 {
   text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.11);
 }
+
 .h1-wrap > h1 > a {
   text-decoration: none;
   color: white;
@@ -43,6 +45,7 @@ body {
 .links {
   display: none;
 }
+
 .links a {
   text-decoration: none;
   color: white;
@@ -67,6 +70,8 @@ body {
   text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.11);
 }
 
+/* IAMGE COMPONENT */
+
 .profile-wrap {
   display: flex;
   margin: 20px 0px 15px 0px;
@@ -77,6 +82,7 @@ body {
   border-radius: 50%;
   border: solid 2px #67c7d8;
 }
+
 .large-pic {
   display: none;
 }
@@ -99,11 +105,14 @@ body {
   margin-bottom: 20px;
 }
 
+/* MAIN BUTTON COMPONENTS THAT REUSED */
+
 .buttons button:hover {
   cursor: pointer;
   transform: translate(-1px, -1px);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
 }
+
 .buttons button:active {
   transform: none;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
@@ -144,16 +153,22 @@ body {
   .h1-wrap h1 {
     font-size: 3.5em;
   }
+
   .heading-wrap h2 {
     font-size: 5em;
     margin-top: 15px;
   }
+
   .text-wrap p {
     font-size: 1.7em;
   }
+
+  /* BUTTONS */
+
   .buttons {
     width: 50%;
   }
+
   .buttons button {
     font-size: 2em;
     padding: 8px;
@@ -183,6 +198,8 @@ body {
     font-size: 2.5em;
   }
 
+  /* BUTTONS */
+
   .buttons {
     margin-top: 35px;
   }
@@ -193,6 +210,8 @@ body {
 }
 
 @media screen and (min-width: 1235px) {
+  /* HEADER COMPONENT */
+
   .links {
     display: flex;
   }
@@ -234,6 +253,7 @@ body {
     cursor: pointer;
     text-decoration: underline;
   }
+
   .buttons {
     width: 35%;
   }
@@ -243,21 +263,26 @@ body {
   .small-pic {
     display: none;
   }
+
   .left-wrap {
     width: 50%;
   }
+
   .large {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
   }
+
   .large-pic {
     width: 40%;
   }
+
   .main-wrapper {
     flex-direction: row;
   }
+
   .contact-button {
     margin-right: 50px;
   }
