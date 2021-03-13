@@ -1,0 +1,335 @@
+html,
+button {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+button {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  background-image: url(../images/background-gradient.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.h1-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  font-size: 1.5em;
+  margin-top: 10px;
+  height: 10vh;
+}
+
+.h1-wrap h1 {
+  text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.11);
+}
+.h1-wrap > h1 > a {
+  text-decoration: none;
+  color: white;
+}
+
+.links {
+  display: none;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.contact-form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form h2 {
+  font-size: 2.3em;
+}
+
+.contact-form p {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.contact-form > * {
+  margin: 3px 0 3px 0;
+}
+
+.sub-headings {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.message {
+  height: 130px;
+}
+
+.inputs {
+  padding: 3px 5px 3px 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  width: fit-content;
+}
+
+input,
+.inputs,
+textarea {
+  color: #f7efef;
+}
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+::placeholder {
+  color: white;
+}
+.socials {
+  margin-top: 20px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.socials img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  border-radius: 100px;
+  border: solid 1px white;
+  background: none;
+
+  font-size: 1.5em;
+  font-weight: 600;
+
+  padding: 4px;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+}
+
+#button:hover {
+  cursor: pointer;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
+}
+#button:active {
+  transform: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
+}
+
+@media screen and (min-width: 500px) {
+  .h1-wrap {
+    width: 100vw;
+  }
+
+  .h1-wrap h1 {
+    font-size: 3.5em;
+  }
+  .inputs {
+    border-radius: 5px;
+  }
+  .contact-form h2 {
+    font-size: 4em;
+    margin-top: 15px;
+  }
+  .contact-form p {
+    font-size: 1.7em;
+  }
+  .contact-form label {
+    font-size: 2em;
+  }
+  .contact-form input {
+    width: 300px;
+    padding: 5px;
+  }
+  .text-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #text-area {
+    width: 450px;
+    height: 150px;
+    padding: 5px;
+  }
+  #button {
+    width: 120px;
+    font-size: 2.5em;
+  }
+  .socials {
+    width: 30%;
+  }
+  .socials img:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .h1-wrap h1 {
+    font-size: 5em;
+    margin: 50px;
+  }
+
+  .heading-wrap h2 {
+    font-size: 5.5em;
+    margin-top: 0;
+  }
+  .main-wrapper {
+    height: 80%;
+    justify-content: space-evenly;
+  }
+
+  .contact-form h2 {
+    font-size: 6em;
+    margin-top: 0;
+  }
+  .contact-form p {
+    font-size: 2.3em;
+  }
+  .contact-form label {
+    font-size: 3em;
+  }
+  .contact-form input {
+    width: 400px;
+    height: fit-content;
+    font-size: 1.8em;
+    padding: 5px;
+  }
+
+  #text-area {
+    width: 550px;
+    height: 225px;
+    font-size: 2em;
+  }
+  #button {
+    width: 150px;
+    font-size: 3em;
+  }
+  .socials {
+    width: 30%;
+    margin-top: 30px;
+  }
+  .socials img {
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 1235px) {
+  .links {
+    display: flex;
+  }
+
+  main {
+    height: fit-content;
+    justify-content: flex-start;
+  }
+
+  .main-wrapper {
+    height: fit-content;
+    align-content: flex-start;
+  }
+
+  header {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .links {
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 3em;
+    font-weight: 600;
+  }
+
+  .h1-wrap {
+    height: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h1-wrap h1 {
+    font-size: 4.6em;
+    margin: 0;
+    margin-left: 0;
+  }
+
+  header .about-me:hover,
+  .portfolio:hover,
+  .blogs:hover,
+  .contact:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  main {
+    height: fit-content;
+    justify-content: flex-start;
+  }
+
+  .main-wrapper {
+    height: fit-content;
+    align-content: flex-start;
+  }
+
+  .contact-form {
+    margin-top: 10px;
+  }
+
+  .socials {
+    width: 50%;
+  }
+
+  #text-area {
+    width: 250px;
+  }
+}
